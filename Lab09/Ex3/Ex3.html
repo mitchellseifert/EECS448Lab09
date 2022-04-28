@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mitchell's Vinyl Record Store </title>
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" href = "Ex3.css">
+<script src="Ex3.js"></script>
+<body>
+<form onsubmit="return validate()" action = "Ex3.php" method = "post">
+  <h1> Mitchell's Vinyl Record Store: </h1>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label for="lname">Password:</label><br>
+  <input type="text" id="password" name="password">
+
+ <h2> Select Quantity of Product: </h2>
+  <img src="strokes.jpg" height="100" width="100">
+  <label for="strokes">The Strokes, "Room on Fire" ($29.99):</label><br>
+  <input type="text" id="strokes" name="strokes"><br>
+  <img src="radiohead.jpg" height="100" width="100">
+  <label for="radiohead">Radiohead, "In Rainbows" ($29.99):</label><br>
+  <input type="text" id="radiohead" name="radiohead"><br>
+  <img src="alexG.jpg" height="100" width="100">
+  <label for="alexG">Alex G, "Trick" ($29.99):</label><br>
+  <input type="text" id="alexG" name="alexG">
+
+  <p>Select a Shipping option:</p>
+  <input type="radio" id="free" name="shipping" value="0">
+  <label for="free">Free 7 Day</label><br>
+  <input type="radio" id="50" name="shipping" value="50">
+  <label for="50">$50.00 over night</label><br>
+  <input type="radio" id="5" name="shipping" value="5">
+  <label for="5">$5.00</label><br>
+  <br> 
+ <input type="submit" value="Submit">
+</form>
+<button onClick="window.location.reload();">Reset</button>
+</body>
+</html>
